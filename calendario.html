@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>calendario</title>
+  <link href="reset.css" rel="stylesheet">
+  <link href="calendario.css" rel="stylesheet">
+  </head>
+<body>
+ <div class="contenedor">
+   <div class="contenedor-reloj">
+     <div class="caja-menu">
+       <ul class="menu" onclick="cambiar(this);listamover()" id="menu">
+         <li class="linea-menu l1"></li>
+         <li class="linea-menu l2"></li>
+         <li class="linea-menu l3"></li>
+       </ul>
+       <div class="lista-menu" id="lista">
+          <button class="accordion" id="ma">personalisar</button>
+            <div id="m" class="panel">
+                <ul class="con-panel">
+                  <li class="panel-li">jajajajajaja</li>
+                  <li class="panel-li">akakakakKKAAKK</li>
+                </ul>
+            </div>
+            <button class="accordion" id="ma">personalisar</button>
+              <div id="m" class="panel">
+                  <ul class="con-panel">
+                    <li class="panel-li">a</li>
+                    <li class="panel-li">b</li>
+                    <li class="panel-li">c</li>
+                    <li class="panel-li">e</li>
+                    <li class="panel-li">d</li>
+                    <li class="panel-li">e</li>
+                    <li class="panel-li">f</li>
+                    <li class="panel-li">h</li>
+                    <li class="panel-li">i</li>
+                    <li class="panel-li">j</li>
+                    <li class="panel-li">k</li>
+                    <li class="panel-li">l</li>
+                    <li class="panel-li">m</li>
+                    <li class="panel-li">n</li>
+                    <li class="panel-li">o</li>
+                    <li class="panel-li">p</li>
+                    <li class="panel-li">q</li>
+                    <li class="panel-li">r</li>
+                  </ul>
+              </div>
+
+
+         </div>
+     </div>
+     <div class="caja-reloj">
+       <div class="reloj">
+         <div class="caja-hora">
+           <div class="c-hora"><p class="hora" id="hora"></p></div>
+           <div class="c-puntos">
+             <p class="segundos" id="segundos"></p>
+             <p class="puntos">:</p>
+           </div>
+           <div class="c-minutos"><p class="minutos" id="minutos"></p></div>
+         </div>
+         <div class="caja-feha">
+           <div class="c-semana"><p class="semana" id="diasemana"></p></div>
+           <div class="c-dia"><p class="dia" id="dia"></p></div>
+           <div class="c-de"><p class="de">De</p></div>
+           <div class="c-mes"><p class="mes" id="mes"></p></div>
+         </div>
+         <div class="caja-ciudad">
+           <div class="c-ciudad"><p class="ciudad">Bogota, Colombia</p></div>
+           <div class="c-ano"><p class="ano" id="ano"></p></div>
+         </div>
+       </div>
+     </div>
+     <div class="caja-fecha">
+
+     </div>
+   </div>
+   <div class="contenedor-calendario">
+     <div class="calendario-mes">
+       <div class="mes-izquierda">
+         <span class="izquierda" id="anterior" onclick="mesantes()"> ❮ </span>
+       </div>
+       <div class="mes-centrado">
+         <p class="mes m-c" id="titulos1"></p>
+         <p class="ano a-c" id="titulos2"></p>
+       </div>
+       <div class="mes-derecha">
+         <span class="derecha" id="posterior" onclick="mesdespues()"> ❯ </span>
+       </div>
+     </div>
+     <div class="calendario-fecha">
+       <table id="diasc" class="diasc">
+         <tr id="fila0"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+         <tr id="fila1"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+         <tr id="fila2"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+         <tr id="fila3"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+         <tr id="fila4"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+         <tr id="fila5"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+         <tr id="fila6"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+       </table>
+     </div>
+   </div>
+ </div>
+</body>
+<script src="calendario.js"></script>
+<script type="text/javascript">
+
+
+</script>
+</html>

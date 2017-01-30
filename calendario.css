@@ -1,0 +1,318 @@
+body{ width: 100%; height: 100%;}
+
+.contenedor{ width: 70%; height: 70%; top: 15%; left: 15%; position: absolute;}
+
+/*-------------reloj-----------*/
+
+.contenedor-reloj{ width: 50%; height: 100%; display: inline-block;}
+
+.caja-menu{ width: 100%; height: 10%;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);}
+
+.menu{
+  width: 20px;
+  height: 15px;
+  left: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+}
+.menu:hover{
+  cursor:pointer;
+}
+.linea-menu{
+  width: 100%;
+  height: 4px;
+  position: relative;
+  border-bottom: 1px solid;
+}
+.l1, .l2, .l3{
+  transition: 0.4s;
+}
+.cambio .l1{
+  transform: rotate(45deg) translate(3px, 2px);
+}
+.cambio .l2{
+  opacity: 0;
+}
+.cambio .l3{
+  transform: rotate(-45deg) translate(3px, -6px);
+}
+/*-----------------------------------------------*/
+.lista-menu{
+  width: 15%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  overflow: hidden;
+  z-index: 1;
+  left: -15%;
+  display: none;
+}
+.mover{
+  left: 0px;
+  display: block;
+}
+
+.lista-menu:hover{
+  overflow: overlay;
+}
+div::-webkit-scrollbar {
+  width:5px;
+  background-color:#f0f0f0;
+}
+
+div::-webkit-scrollbar-thumb {
+  /*background-clip:content-box;*/
+  background-color: black;
+}
+div::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+div::-webkit-scrollbar:hover {
+  counter-reset: pointer;
+}
+
+
+
+.accordion{
+  width: 100%;
+  height: 10%;
+  text-align: left;
+  padding: 0px 0px 0px 10px;
+  background-color: #dd  dddd;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+}
+.accordion:hover{
+  cursor: pointer;
+}
+.accordion::after{
+  content: '+';
+  width: 10%;
+  height: 10%;
+  text-align: right;
+  float: right;
+  right: 10px;
+  position: relative;
+}
+button.accordion.activo:after {
+    content: "-";
+    right: 12px;
+}
+.panel{
+  display: none;
+}
+.mostrar{
+  display: block;
+}
+.panel-li{
+  width: 100%;
+  height: 20px;
+  text-align: center;
+}
+
+
+
+
+/*----------------------------*/
+.caja-reloj{
+  width: 100%;
+  height: 80%;
+  position: relative;
+}
+.reloj{
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  left: 15%;
+  top: 25%;
+  display: inline-block;
+}
+.caja-hora{
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.c-hora, .c-minutos{
+  height: 100%;
+  width: 45%;
+}
+.c-puntos{
+  height: 100%;
+  width: 5%;
+}
+.hora, .minutos{
+  width: 100%;
+  height: 70%;
+  top: 30%;
+  position: relative;
+}
+.hora{
+  text-align: right;
+  font-size: 70px;
+}
+.puntos{
+  text-align: center;
+  font-size: 60px;
+  width: 100%;
+  height: 70%;
+}
+.minutos{
+  text-align: left;
+  font-size: 70px;
+}
+.segundos{
+  font-size: 15px;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  position: relative;
+  top: 20%;
+}
+/*<-----------<--<----------->*/
+
+.caja-feha{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+}
+.caja-feha{
+}
+
+.c-semana, .c-dia, .c-de, .c-mes{
+  height: 100%;
+}
+.c-semana{
+  width: 40%;
+  text-align: right;
+  margin-right: 5px;
+}
+.c-dia{
+  width: 10%;
+}
+.c-de{
+  width: 10%;
+  text-align: center;
+}
+.c-mes{
+  width: 40%;
+  text-align: left  ;
+  margin-left: 5px;
+}
+
+
+
+
+.caja-ciudad{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+}
+
+.c-ciudad{
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+.c-ano{
+  width: 100%;
+  top: 5px;
+  position: relative;
+}
+
+
+
+/*----------------------------*/
+.caja-fecha{
+  width: 100%;
+  height: 10%;
+  background-color: #2cb5e8;
+}
+
+
+
+/*-------------calendario------*/
+.contenedor-calendario{
+  width: 50%;
+  height: 100%;
+    float:right;
+}
+.calendario-mes{
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.mes-izquierda{
+  width: 10%;
+  height: 100%;
+  background-color: #0fb8ad;
+}
+.mes-derecha{
+  width: 10%;
+  height: 100%;
+  background-color: #0fb8ad;
+}
+.izquierda, .derecha{
+  width: 100%;
+  height: 10%;
+  position: relative;
+  display: block;
+  text-align: center;
+  top: 45%;
+  color: white;
+}
+.izquierda:hover, .derecha:hover{
+  cursor: pointer;
+}
+.mes-centrado{
+  width: 80%;
+  height: 100%;
+  background-color: #0fb8ad;
+  text-align: center
+}
+.m-c{
+  font-size: 60px;
+}
+.a-c{
+  font-size: 20px;
+}
+.m-c, .a-c{
+  top: 30%;
+  position: relative;
+  color: white;
+}
+
+
+
+.calendario-fecha{
+    width: 100%;
+    height: 50%;
+}
+
+.diasc { width: 100%; height: 100%; text-align: center; }
+
+.diasc, th, td{/*  border: 1px solid;*/}
+
+tr{ height: 15%; }
+
+th{ background-color: #9E9E9E; font-size: 15px; padding-top: 8px; }
+
+td{ background-color: #e2e2e2; font-size: 15px; padding: 8px; }
+
+cite::after{
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
